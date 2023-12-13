@@ -16,4 +16,5 @@ function maxSubarraySum(arr, n){
         tempSum = tempSum - arr[i - num] + arr[i]
         maxSum = Math.max(maxSum, tempSum)
     }
+    return maxSum
 }
