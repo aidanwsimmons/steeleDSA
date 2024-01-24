@@ -134,6 +134,7 @@ class SinglyLinkedList {
         let prev = this.get(index - 1)
         let removed = this.get(index)
         prev.next = removed.next
+        removed.next = null
         this.length--
         return removed
 
