@@ -33,7 +33,7 @@ class SinglyLinkedList {
     }
 
     pop(){
-        if(!head){
+        if(!this.head){
             return undefined
         }
         let current = this.head
@@ -53,7 +53,7 @@ class SinglyLinkedList {
     }
 
     shift(){
-        if(!head){
+        if(!this.head){
             return undefined
         }
         let temp = this.head
