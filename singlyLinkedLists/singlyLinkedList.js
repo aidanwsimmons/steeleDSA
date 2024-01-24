@@ -125,10 +125,10 @@ class SinglyLinkedList {
             return undefined
         }
         if(index = this.length - 1){
-            return !!this.pop()
+            return this.pop()
         }
         if(index === 0){
-            return !!this.shift()
+            return this.shift()
         }
 
         let prev = this.get(index - 1)
