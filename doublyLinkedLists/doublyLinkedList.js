@@ -65,7 +65,7 @@ class DoublyLinkedList{
     }
 
     unshift(val){
-        let newNode = newNode(val)
+        let newNode = new Node(val)
         if(!this.head){
             this.head = newNode
             this.tail = newNode
