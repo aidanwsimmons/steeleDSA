@@ -14,4 +14,4 @@ function naiveSearch(long, short){
             }
         }
         return count
-    }
+    }9

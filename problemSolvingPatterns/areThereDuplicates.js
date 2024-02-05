@@ -25,3 +25,8 @@ function areThereDuplicates(...args) {
     }
     return false
   }
+
+  //set solution
+  function areThereDuplicatesSet(){
+    return new Set(arguments).size !== arguments.length
+  }

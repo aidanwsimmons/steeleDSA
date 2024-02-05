@@ -4,7 +4,7 @@ function binarySearch(arr, val){
     let mid = Math.floor((max + min) / 2)
     
     if(val < arr[min] || val > arr[max]){
-        console.log('out of range')
+        console.log('num out of range')
         return -1
     }
     
