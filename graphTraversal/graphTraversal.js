@@ -52,6 +52,50 @@ class Graph{
         return result;
         
     }
+
+    depthFirstIterative(start){
+        let stack = [start];
+        let result = [];
+        let visited = {};
+        let current;
+
+        visited[start] = true;
+
+        while(stack.length){
+            current = stack.pop();
+            result.push(current)
+
+            this.adjacencyList[current].forEach(neighbor => {
+                if(!visited[neighbor]){
+                    visited[neighbor] = true;
+                    stack.push(neighbor)
+                }
+            })
+        }
+        return result;
+    }
+
+    breathFirst(start){
+        let queue = [start];
+        let result = [];
+        let visited = {};
+        let current;
+
+        visited[start] = true;
+
+        while(queue.length){
+            current = queue.shift();
+            result.push(current);
+
+            this.adjacencyList[current].forEach(neighbor => {
+                if(!visited[neighbor]){
+                    visited[neighbor] = true;
+                    queue.push(neighbor)
+                }
+            });
+        }
+        return result;
+    }
 }
 
 let g = new Graph();
